@@ -46,8 +46,8 @@
 				DockPanel.Dock="Bottom"
 				Background="Crimson"
 				MaxHeight="50">
-				<TextBlock DockPanel.Dock="Left" Margin="5"> Tags: Tag1 Tag2 Tag3 Tag4 </TextBlock>
-				<TextBlock DockPanel.Dock="Right" Margin="5"> Rate this article: 4/5 </TextBlock>
+				<TextBlock DockPanel.Dock="Right" Margin="5">  Rate this article: 4/5  </TextBlock>
+				<TextBlock DockPanel.Dock="Left" Margin="5">Tags: Tag1 Tag2 Tag3 Tag4</TextBlock>
 			</DockPanel>
 			<Image
 				Width="100"
