@@ -1,77 +1,68 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:_4_3.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:_4_3.Views"
-        mc:Ignorable="d" 
-		d:DesignWidth="700" 
-		d:DesignHeight="500"
+        xmlns:vm="using:_4_3.ViewModels"
+        xmlns:views="using:_4_3.Views"
+        mc:Ignorable="d"
+        d:DesignWidth="700"
+        d:DesignHeight="500"
         x:Class="_4_3.Views.MainWindow"
-
         Icon="/Assets/avalonia-logo.ico"
         Title="_4_3">
 
-	<Design.DataContext>
-		<vm:MainWindowViewModel/>
-	</Design.DataContext>
-	
-	<Grid ShowGridLines = "True"
-		  RowDefinitions="30,*"
-		  ColumnDefinitions="2*,*">
-		
-		<DockPanel Grid.Column="0"
-				   Grid.Row="0"
-				   DockPanel.Dock="Top" 
-				   Grid.ColumnSpan="2"
-				   Background="Coral">
-			<TextBlock Margin="5"> Home </TextBlock>
-			<TextBlock Margin="5"> About </TextBlock>
-			<TextBlock Margin="5"> Topic 1 </TextBlock>
-			<TextBlock Margin="5"> Topic 2 </TextBlock>
-			<TextBlock Margin="5"> Topic 3 </TextBlock>
-			<TextBlock Margin="5" 
-					   TextAlignment = "Right" 
-					   DockPanel.Dock="Right"> RSS </TextBlock>
-		</DockPanel>
-		
-		
-		<DockPanel
-			Grid.Column="0"
-			Grid.Row="1"
-			Background="AliceBlue">
-			<TextBlock 
-				DockPanel.Dock="Top"
-				Margin="5"> Article 1 </TextBlock>
-			<TextBlock DockPanel.Dock="Top"
-					   TextAlignment = "Left"
-					   TextWrapping="Wrap"
-					   Margin="5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </TextBlock>
-			<!--нижнее меню-->
-			<DockPanel
-				DockPanel.Dock="Bottom"
-				Background="Crimson"
-				MaxHeight="50">
-				<TextBlock DockPanel.Dock="Right" Margin="5">  Rate this article: 4/5  </TextBlock>
-				<TextBlock DockPanel.Dock="Left" Margin="5">Tags: Tag1 Tag2 Tag3 Tag4</TextBlock>
-			</DockPanel>
-			<Image
-				Width="100"
-				Height="100"
-				DockPanel.Dock="Bottom"
-				Source="/Assets/square.png"/>
-		</DockPanel>
-		<!--правое поле-->
-		<StackPanel
-			Grid.Column="1"
-			Grid.Row="1"
-			Background="Goldenrod">
-			<TextBlock TextAlignment = "Left" TextWrapping="Wrap" Margin="3"> Lodo fughdfughdfiug hdfiughdfiughd fiughrem ipsumLo dofughdfughdfiu ghdfiughdfiu ghdfiughrem ipsum </TextBlock>
-			<TextBlock TextAlignment = "Right" Margin="3"> More </TextBlock>
-			<TextBlock TextAlignment = "Right" Margin="2"> Yesterday </TextBlock>
-			<TextBlock TextAlignment = "Left" TextWrapping="Wrap" Margin="5"> Lodofu ghdfughdfiughdfiu ghdfiughdfiugh rem ipsumLodofughdf ughdfiughdfiug hdfiughdfiughrem ipsum </TextBlock>
-			<TextBlock TextAlignment = "Right" Margin="3"> More </TextBlock>
-			<TextBlock TextAlignment = "Right" Margin="2"> 1 day ago </TextBlock>
-		</StackPanel>
-	</Grid>	
+  <Grid ShowGridLines = "True"
+        RowDefinitions="30,*"
+        ColumnDefinitions="2*,*">
+
+    <DockPanel Grid.Column="0"
+               Grid.Row="0"
+               DockPanel.Dock="Top"
+               Grid.ColumnSpan="2"
+               Background="Coral">
+      <TextBlock Margin="5"> Home </TextBlock>
+      <TextBlock Margin="5"> About </TextBlock>
+      <TextBlock Margin="5"> Topic 1 </TextBlock>
+      <TextBlock Margin="5"> Topic 2 </TextBlock>
+      <TextBlock Margin="5"> Topic 3 </TextBlock>
+      <TextBlock Margin="5"
+                 TextAlignment = "Right"
+                 DockPanel.Dock="Right"> RSS </TextBlock>
+    </DockPanel>
+
+
+    <DockPanel Grid.Column="0"
+               Grid.Row="1"
+               Background="AliceBlue">
+      <TextBlock DockPanel.Dock="Top"
+                 Margin="5"> Article 1 </TextBlock>
+      <TextBlock DockPanel.Dock="Top"
+                 TextAlignment = "Left"
+                 TextWrapping="Wrap"
+                 Margin="5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </TextBlock>
+      <!--нижнее меню-->
+      <DockPanel DockPanel.Dock="Bottom"
+                 Background="Crimson"
+                 MaxHeight="50">
+        <TextBlock DockPanel.Dock="Right" Margin="5"> Rate this article: 4/5  </TextBlock>
+        <TextBlock DockPanel.Dock="Left" Margin="5">Tags: Tag1 Tag2 Tag3 Tag4</TextBlock>
+      </DockPanel>
+      <Image Width="100"
+             Height="100"
+             DockPanel.Dock="Bottom"
+             Source="/Assets/square.png"/>
+    </DockPanel>
+    <!--правое поле-->
+    <StackPanel Grid.Column="1"
+                Grid.Row="1"
+                Background="Goldenrod">
+      <TextBlock TextAlignment = "Left" TextWrapping="Wrap" Margin="3"> Lodo fughdfughdfiug hdfiughdfiughd fiughrem ipsumLo dofughdfughdfiu ghdfiughdfiu ghdfiughrem ipsum </TextBlock>
+      <TextBlock TextAlignment = "Right" Margin="3"> More </TextBlock>
+      <TextBlock TextAlignment = "Right" Margin="2"> Yesterday </TextBlock>
+      <TextBlock TextAlignment = "Left" TextWrapping="Wrap" Margin="5"> Lodofu ghdfughdfiughdfiu ghdfiughdfiugh rem ipsumLodofughdf ughdfiughdfiug hdfiughdfiughrem ipsum </TextBlock>
+      <TextBlock TextAlignment = "Right" Margin="3"> More </TextBlock>
+      <TextBlock TextAlignment = "Right" Margin="2"> 1 day ago </TextBlock>
+    </StackPanel>
+  </Grid>
+  
 </Window>
