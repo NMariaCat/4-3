@@ -8,8 +8,14 @@
 		d:DesignWidth="700" 
 		d:DesignHeight="500"
         x:Class="_4_3.Views.MainWindow"
+
         Icon="/Assets/avalonia-logo.ico"
         Title="_4_3">
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+	
 	<Grid ShowGridLines = "True"
 		  RowDefinitions="30,*"
 		  ColumnDefinitions="2*,*">

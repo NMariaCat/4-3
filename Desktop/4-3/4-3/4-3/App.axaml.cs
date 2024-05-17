@@ -1,9 +1,10 @@
-﻿using _4_3.ViewModels;
-using _4_3.Views;
-
-using Avalonia;
+﻿using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using _4_3.ViewModels;
+using _4_3.Views;
+
+
 
 namespace _4_3;
 

@@ -1,7 +1,7 @@
-﻿using System;
-
+﻿
 using Avalonia;
 using Avalonia.ReactiveUI;
+using System;
 
 namespace _4_3.Desktop;
 
@@ -19,6 +19,6 @@ class Program
         => AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
+            .UseReactiveUI()
             .LogToTrace();
-         
 }
